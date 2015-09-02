@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+body{
+  background:url("http://www.freewallpaperfullhd.com/wp-content/uploads/2015/06/wallpapers/old_clock_black_and_white-wallpaper-2560x1600.jpg")no-repeat center center fixed;
+  background-size:cover; ;
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+  margin: 0 auto;
+  color:white;
+}
+#title{
+    font-family: 'Delius Unicase', cursive;   
+    color: #A24545;
+    font-size: 70px;
+    margin-top: 60px;
+    text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+}
+.options div{
+  display:inline-block;  
+}
+.set{
+  display:inline-block;
+  margin:5px;
+  font-size:40px;
+}
+button{
+  color: white;
+  background: transparent;
+  border:0;
+  outline: 0;
+  font-size:30px;
+}
+#decBreak:hover{
+  color:red;
+}
+#incBreak:hover{
+  color:#2ecc71;;
+}
+#decSession:hover{
+  color:red;
+}
+#incSession:hover{
+  color:#2ecc71;
+}
+.break,.session{
+  font-size:20px;
+  margin:40px;  
+}
+.break > p,.session >p{
+    color:#2EB8E6;
+    font-family:monospace;
+}
+#count ,#break,#time{
+  color:#ff6e40;
+}
+.clock{
+  background-color:#067094;
+  font-size:50px;
+  border-radius:50%;
+  border:3px #2ecc71 solid;
+  width: 300px;
+  margin:auto;
+  padding:3%;
+}
+#time{
+  margin-top: 40px;
+}
+.clock-buttons button{
+  font-size:50px;
+  margin:30px;
+}
+.clock-buttons button:hover{ 
+  color:#2ecc71;
+}
+
+.copyright{
+  color:#A24545;
+  text-align:center;
+  font-size:25px;
+  font-weight:600;text-shadow: 1px 0 0 white, -1px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+}
+
+@media screen and (max-width:450px){
+  .clock-buttons button{
+    font-size:25px;
+    margin:30px;
+  }
+  #title {
+    font-size:55px;
+    margin: 10px;
+  }
+  .clock{
+    width:250px;
+  }  
+}
+@media screen and (max-width:450px){
+  .break,.session{
+    margin:20px;
+  }
+}
