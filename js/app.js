@@ -110,22 +110,27 @@ $(document).ready(function(){
         breakseconds--;
     }
   
-  $('.clock').click(function(){    
-   if(pause === false){
-     countdown = setInterval(timer, 1000);
-     pause = true;
-   }
-   else if(pause === true){
-     clearInterval(countdown);
-     clearInterval(breakcountdown);
-     pause = false;
-   }
+  
+  
+  $('.clock').click(function(){
+    if(pause === false){
+      if($("#clocktitle").text() === "Break") {
+        countdown = setInterval(breaktimer, 1000);
+      } else {
+        countdown = setInterval(timer, 1000);
+      }
+      pause = true;
+    }
   });
   
   $(".btn-start").click(function(){
-    if(pause===false){
-      countdown=setInterval(timer,1000);      
-      pause=true;
+    if(pause === false){
+      if($("#clocktitle").text() === "Break") {
+        countdown = setInterval(breaktimer, 1000);
+      } else {
+        countdown = setInterval(timer, 1000);
+      }
+      pause = true;
     }
   });
   
